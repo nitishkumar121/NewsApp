@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavoriteNewsTableViewCell" rowHeight="100" id="KGk-i7-Jjw" customClass="FavoriteNewsTableViewCell" customModule="NewsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="443" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="443" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSi-HF-rB8">
+                        <rect key="frame" x="131" y="12" width="292" height="36"/>
+                        <string key="text">Yogi Adityanath Oath-taking LIVE Updates: Yogi Becomes UP CM Once Again; Cabinet Portfolio Distribution Likely Today or Saturday Morning</string>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vh8-yO-Rmh">
+                        <rect key="frame" x="131" y="53" width="292" height="42"/>
+                        <string key="text">Yogi Adityanath Oath-taking LIVE Updates: Yogi Becomes UP CM Once Again; Cabinet Portfolio Distribution Likely Today or Saturday Morning</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4TR-Qp-Y8O">
+                        <rect key="frame" x="15" y="12" width="103" height="83"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="file-upload-image-icon-115632290507ftgixivqp" translatesAutoresizingMaskIntoConstraints="NO" id="ded-Hp-pt1">
+                                <rect key="frame" x="0.0" y="0.0" width="103" height="83"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="83" id="ARx-Xd-Csy"/>
+                            <constraint firstAttribute="trailing" secondItem="ded-Hp-pt1" secondAttribute="trailing" id="RhO-SV-rbD"/>
+                            <constraint firstAttribute="width" constant="103" id="fEb-HJ-kA5"/>
+                            <constraint firstItem="ded-Hp-pt1" firstAttribute="leading" secondItem="4TR-Qp-Y8O" secondAttribute="leading" id="qus-aG-NSa"/>
+                            <constraint firstAttribute="bottom" secondItem="ded-Hp-pt1" secondAttribute="bottom" id="um9-o3-TLU"/>
+                            <constraint firstItem="ded-Hp-pt1" firstAttribute="top" secondItem="4TR-Qp-Y8O" secondAttribute="top" id="yV2-Jn-oYf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Vh8-yO-Rmh" firstAttribute="leading" secondItem="4TR-Qp-Y8O" secondAttribute="trailing" constant="13" id="RIb-PA-SMf"/>
+                    <constraint firstItem="zSi-HF-rB8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="VOC-K3-upZ"/>
+                    <constraint firstItem="4TR-Qp-Y8O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="avh-a7-jiP"/>
+                    <constraint firstAttribute="trailing" secondItem="zSi-HF-rB8" secondAttribute="trailing" constant="20" id="fBf-zP-LRW"/>
+                    <constraint firstAttribute="trailing" secondItem="Vh8-yO-Rmh" secondAttribute="trailing" constant="20" id="hcZ-ri-V1U"/>
+                    <constraint firstItem="Vh8-yO-Rmh" firstAttribute="top" secondItem="zSi-HF-rB8" secondAttribute="bottom" constant="5" id="k8p-B1-TnP"/>
+                    <constraint firstAttribute="bottom" secondItem="4TR-Qp-Y8O" secondAttribute="bottom" constant="5" id="l5j-mG-RuP"/>
+                    <constraint firstItem="zSi-HF-rB8" firstAttribute="leading" secondItem="4TR-Qp-Y8O" secondAttribute="trailing" constant="13" id="skI-tf-yE3"/>
+                    <constraint firstItem="4TR-Qp-Y8O" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="wRS-yJ-sc2"/>
+                    <constraint firstAttribute="bottom" secondItem="Vh8-yO-Rmh" secondAttribute="bottom" constant="5" id="wrD-gt-M3P"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="favNewsImage" destination="ded-Hp-pt1" id="F8x-Mm-uAe"/>
+                <outlet property="favNewsShortDescription" destination="Vh8-yO-Rmh" id="Uqy-Pd-peJ"/>
+                <outlet property="favNewsTitle" destination="zSi-HF-rB8" id="FCL-kV-cqC"/>
+            </connections>
+            <point key="canvasLocation" x="145.6521739130435" y="101.11607142857143"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="file-upload-image-icon-115632290507ftgixivqp" width="840" height="859"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

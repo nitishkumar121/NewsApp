@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecentNewsCollectionViewCell" id="gTV-IL-0wX" customClass="RecentNewsCollectionViewCell" customModule="NewsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="350"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="350"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="file-upload-image-icon-115632290507ftgixivqp" translatesAutoresizingMaskIntoConstraints="NO" id="w10-0N-VKU">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="227"/>
+                        <color key="tintColor" red="0.93333339689999995" green="0.93333339689999995" blue="0.93333339689999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pw-k6-BLf">
+                        <rect key="frame" x="260" y="181" width="30" height="30"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="heart"/>
+                        <connections>
+                            <action selector="favButtonPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="1YT-s2-Jkg"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bv5-ZO-U1u">
+                        <rect key="frame" x="0.0" y="215" width="300" height="135"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKb-NG-7Kh">
+                                <rect key="frame" x="5" y="12" width="290" height="38.5"/>
+                                <string key="text">A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs add one idea at a time to your broader argument.</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A paragraph is a series of ohrelated sentences developing a central idea, called the jn jnjjjjhkutopic. Try to think about p" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Crs-TO-Rk1">
+                                <rect key="frame" x="5" y="50.5" width="293" height="82.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BKb-NG-7Kh" secondAttribute="trailing" constant="5" id="Iju-LZ-j2S"/>
+                            <constraint firstAttribute="bottom" secondItem="Crs-TO-Rk1" secondAttribute="bottom" constant="2" id="Zh1-tr-j9N"/>
+                            <constraint firstItem="BKb-NG-7Kh" firstAttribute="top" secondItem="Bv5-ZO-U1u" secondAttribute="top" constant="12" id="gDj-sC-RzT"/>
+                            <constraint firstItem="Crs-TO-Rk1" firstAttribute="top" secondItem="BKb-NG-7Kh" secondAttribute="bottom" id="qDg-sa-dPP"/>
+                            <constraint firstItem="Crs-TO-Rk1" firstAttribute="leading" secondItem="Bv5-ZO-U1u" secondAttribute="leading" constant="5" id="sbE-zG-xoG"/>
+                            <constraint firstItem="BKb-NG-7Kh" firstAttribute="leading" secondItem="Bv5-ZO-U1u" secondAttribute="leading" constant="5" id="ugj-RF-KaM"/>
+                            <constraint firstAttribute="trailing" secondItem="Crs-TO-Rk1" secondAttribute="trailing" constant="2" id="wax-zD-mBh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" red="0.93333339689999995" green="0.93333339689999995" blue="0.93333339689999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="6pw-k6-BLf" secondAttribute="trailing" constant="10" id="0Wl-LW-TGz"/>
+                <constraint firstAttribute="trailing" secondItem="Bv5-ZO-U1u" secondAttribute="trailing" id="FYB-jN-nEe"/>
+                <constraint firstAttribute="bottom" secondItem="Bv5-ZO-U1u" secondAttribute="bottom" id="FvV-SR-06C"/>
+                <constraint firstItem="w10-0N-VKU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="GaW-Ss-rjn"/>
+                <constraint firstItem="Bv5-ZO-U1u" firstAttribute="top" secondItem="6pw-k6-BLf" secondAttribute="bottom" constant="4" id="JCU-cR-4t8"/>
+                <constraint firstItem="Bv5-ZO-U1u" firstAttribute="top" secondItem="w10-0N-VKU" secondAttribute="bottom" constant="-12" id="Mxa-tC-l17"/>
+                <constraint firstItem="w10-0N-VKU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WkE-aA-Ohr"/>
+                <constraint firstAttribute="bottom" secondItem="w10-0N-VKU" secondAttribute="bottom" constant="123" id="ZLI-fB-aqk"/>
+                <constraint firstItem="6pw-k6-BLf" firstAttribute="leading" secondItem="w10-0N-VKU" secondAttribute="trailing" constant="-40" id="ePU-8I-hDI"/>
+                <constraint firstItem="Bv5-ZO-U1u" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kpG-3y-S0h"/>
+                <constraint firstAttribute="trailing" secondItem="w10-0N-VKU" secondAttribute="trailing" id="yay-g9-73Z"/>
+                <constraint firstItem="6pw-k6-BLf" firstAttribute="top" secondItem="w10-0N-VKU" secondAttribute="bottom" constant="-46" id="zKG-AP-eFt"/>
+            </constraints>
+            <size key="customSize" width="281" height="224"/>
+            <connections>
+                <outlet property="favButton" destination="6pw-k6-BLf" id="Fw2-Sf-nef"/>
+                <outlet property="newsImage" destination="w10-0N-VKU" id="DxG-tD-9pN"/>
+                <outlet property="recenView" destination="Bv5-ZO-U1u" id="wsN-26-Snm"/>
+                <outlet property="shortDescription" destination="Crs-TO-Rk1" id="v4Z-OP-sI8"/>
+                <outlet property="titleLabel" destination="BKb-NG-7Kh" id="Hhz-Rj-ssb"/>
+            </connections>
+            <point key="canvasLocation" x="476.81159420289856" y="-22.098214285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="file-upload-image-icon-115632290507ftgixivqp" width="840" height="859"/>
+        <image name="heart" width="40" height="40"/>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
